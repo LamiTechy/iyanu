@@ -63,7 +63,7 @@ export default function AdminCourses() {
             <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-4">
               <div>
                 <label className="label">Course Code</label>
-                <input type="text" className="input" placeholder="e.g. CSC101" required value={form.code}
+                <input type="text" className="input" placeholder="e.g. COM101" required value={form.code}
                   onChange={(e) => setForm({ ...form, code: e.target.value })} />
               </div>
               <div>

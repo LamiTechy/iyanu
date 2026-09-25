@@ -57,21 +57,21 @@ async function seed() {
   }
 
   const [course1] = await db.insert(courses).values({
-    code: "CSC 401",
+    code: "COM 401",
     title: "Software Engineering",
     description: "Principles and practices of software development",
     lecturerId: lecturer1.id,
   }).returning();
 
   const [course2] = await db.insert(courses).values({
-    code: "CSC 402",
+    code: "COM 402",
     title: "Database Management Systems",
     description: "Database design, SQL, and administration",
     lecturerId: lecturer1.id,
   }).returning();
 
   const [course3] = await db.insert(courses).values({
-    code: "CSC 403",
+    code: "COM 403",
     title: "Web Technologies",
     description: "Modern web development with HTML, CSS, JavaScript, and frameworks",
     lecturerId: lecturer2.id,
